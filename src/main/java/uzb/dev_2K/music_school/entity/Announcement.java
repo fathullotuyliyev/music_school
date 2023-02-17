@@ -5,21 +5,17 @@ import lombok.Data;
 
 /**
  * @project music_school
- * @author: Fathullo To'yliyev on 15/02/2023.
+ * @author: Fathullo To'yliyev on 16/02/2023.
  * Company: Technologic ASBT
  */
 @Entity
-@Table(name = "users")
+@Table(name = "announcements")
 @Data
-public class User {
+public class Announcement {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
-    private String role;
-
+    private String title;
+    private String content;
 }

@@ -5,13 +5,13 @@ import lombok.Data;
 
 /**
  * @project music_school
- * @author: Fathullo To'yliyev on 15/02/2023.
+ * @author: Fathullo To'yliyev on 16/02/2023.
  * Company: Technologic ASBT
  */
 @Entity
-@Table(name = "users")
+@Table(name = "courses")
 @Data
-public class User {
+public class Course {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
